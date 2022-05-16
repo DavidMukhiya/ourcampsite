@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Navbar, NavbarBrand } from 'reactstrap';
 import NucampLogo from './app/assets/img/logo.png';
 import './App.css';
+//import CampsiteCard from './features/counter/campsites/CampsiteCard';
+import CampsitesList from './features/campsites/CampsitesList';
+//import { CAMPSITES } from './app/shared/CAMPSITES';
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
           </NavbarBrand>
         </Container>
       </Navbar>
+      <CampsitesList />
     </div>
   );
 }
