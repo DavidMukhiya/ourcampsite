@@ -1,18 +1,18 @@
 
-import { Card, CardImg, CardImgOverlay, CardTitle, CardText } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const CampsiteCard = (props) => {
+const CampsiteCard = ({ campsite }) => {
+    const { image, name } = campsite;
     return (
         <Card>
             <CardImg
                 width='100%'
-                src={props.campsite.image}
-                alt={props.campsite.name}
+                src={image}
+                alt={name}
             />
             <CardImgOverlay>
-                <CardTitle>{props.campsite.name}</CardTitle>
-                <CardText>My Name Khan</CardText>
+                <CardTitle>{name}</CardTitle>
             </CardImgOverlay>
         </Card>
     );
